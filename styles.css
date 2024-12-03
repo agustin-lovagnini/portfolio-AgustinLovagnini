@@ -1,0 +1,414 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* font-family: EL_NOMBRE_DE_LA_TIPOGRAFIA */
+}
+
+a {
+    text-decoration: none;
+}
+
+#hero{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("imagenes/imagenFondo.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+#projects h2 {
+    color: purple;
+    margin: 10px 0 20px 0;
+    text-align: center;
+    font-size: 45px;
+}
+
+.project-text p {
+    padding-left: 5px;
+}
+
+.contenidopersonal {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px 20px;
+    background-color : rgba(250, 235, 215, 0.933);
+    border: 9px double gray;
+}
+
+.contenidopersonal h1, .contenidopersonal h2 {
+    color: brown;
+}
+
+#hero h1{
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#hero h2{
+    font-size: 32px;
+    text-align: center;
+    margin: 20px 0 15px 0;
+}
+
+h3{
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
+p{
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
+a{
+    color:skyblue;
+}
+
+.project-detail a {
+    margin: 0;
+    color: black;
+}
+
+header nav ul li a {
+    color: red;
+}
+
+header nav ul li:hover {
+    transition: .15s all ease-in-out;
+    transform: scale(1.2);
+}
+
+
+.projects-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+.project-detail {
+    border: 9px solid gray;
+    border-radius: 15px;
+    width: 300px;
+    margin: 20px;
+}
+
+
+.project-detail:hover{
+    border: 9px solid gray;
+    border-radius: 15px;
+    width: 300px;
+    margin: 20px;
+    transition: .15s all ease-in-out;
+    transform: scale(1.2);
+}
+
+
+.project-detail a img{
+    width: 100%;
+    height: 60%;
+    border-radius: 2px;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: beige;
+    z-index: 2;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none; 
+}
+
+nav ul li{
+    margin-left: 20px;
+    margin-right: 5px;
+    padding: 10px 20px;
+    background-color : antiquewhite;
+}
+
+.contenedordecontacto { 
+    text-align: center;
+    width: 280px;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color : antiquewhite;
+    font-size: 15px;
+}
+
+.contenedordecontacto:hover{
+    transition: .15s all ease-in-out;
+    transform: scale(1.2);
+}
+
+.cuadrodecontactanos {
+    background-color: white;
+    margin: auto;
+    width: 35%;
+    margin-bottom: 20px;
+    border: 9px solid antiquewhite
+}
+
+.cuadrodecontactanos h3{
+    color: black;
+    text-align: center;
+    /* COMO HACER QUE EL TEXTO NO CREZCA TANTO Y QUEDE CENTRADO*/
+    max-width: 432px;
+    /* CON MARGIN 0 AUTO PUEDO CENTRAR BLOQUES */
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.cuadrodecontactanos .banner {
+    background-color:red;
+    font-size: 100px;
+    text-align: center;
+    padding: 24px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*NO PUEDO ACCHICAR "iconoavion"*/
+
+
+.icon svg {
+    background: white;
+    display: inline-block;
+    font-size: 0;
+    padding: 7px;
+    border-radius: 100%;
+}
+
+
+/*LABLE MIRAR VIDEO, NO SE PUEDE HACER*/
+
+.elementosdetrabajos img{
+    width: 50%;
+    border-radius: 9px;
+    border: 9px solid gray;
+    border-radius: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contenidoDelCuadro{
+    padding: 1rem;
+    overflow: hidden;
+    color: gray
+
+}
+
+textarea {
+    resize: none;
+}
+
+.contenidoDelCuadro label, .contenidoDelCuadro input, .contenidoDelCuadro button, .contenidoDelCuadro textarea {
+    display: block;
+    width:  100%;
+    margin-bottom: 8px;
+} 
+
+
+.contenidoDelCuadro label{
+    font-weight: 700;
+}
+
+.contenidoDelCuadro input,.contenidoDelCuadro textarea{
+    border: none;
+    border-bottom: 2px solid red;
+    margin-bottom: 10px;
+    font-size: 20px;
+    outline: none;
+    color: gray;
+}
+
+.contenidoDelCuadro textarea{
+    min-height: 100px;
+}
+
+.contenidoDelCuadro button {
+    padding: 10px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    -webkit-transition: font-size 1s ease;
+    transition: font-size 1s ease;
+}
+
+.contenidoDelCuadro button:hover {
+    color:aqua;
+    font-size: 22px;
+}
+
+
+
+/*PIE DEPAGINA*/
+.pie-pagina{
+    width: 100%;
+    background-color: rgb(193, 193, 193);
+}
+
+.pie-pagina .grupo-1 .red-social a svg {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 10px;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a svg:hover {
+    fill:aqua;  
+    transition: .15s all ease-in-out;
+    transform: scale(1.2);
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure svg {
+    width: 200px;
+    height: 200px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: whitesmoke;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-2 {
+    background-color: rgba(0, 0, 0, 0.355);
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}
+
+/*CSS IMAGEN 1 */
+
+.contenidoDeProyectos h1{
+    text-align: center;
+    width: 220px;
+    margin: 20px;
+    padding: 20px;
+    background-color : antiquewhite;
+    font-size: 20px;
+}
+
+.contenidoDeProyectos p {
+    font-size: 16px;
+}
+
+.contenidoDeProyectos h1, p {
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+/* CSS quiesoy*/
+
+.contenedordescripcion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+.contenedordescripcion > div {
+    width: 50%;
+  }
+
+.imagenPersonal img {
+    width: 50%;
+    border: 9px solid gray;
+    border-radius: 15px;
+    margin: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.descripcionPersonal h1 {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.descripcionPersonal p {
+    padding-bottom: 35px;
+}
+
+/* CUANDO LA PANTALLA DEL USUARIO SEA IGUAL O MAYOR A 1024px, que pase esto... */
+/* SE LLAMA "MEDIA QUERY" */
+@media(min-width: 1024px) {
+    .cuadrodecontactanos h3{
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+
+    .cuadrodecontactanos {
+        margin: auto;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .contenidopersonal {
+        margin: 24px;
+        padding: 10px 20px;
+    }
+
+}
